@@ -1,0 +1,258 @@
+/* shared style */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: #FF42A5;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* nav bar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gamer{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FF42A5;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.para-icon{
+    display: flex;
+    gap: 1rem;
+    border: 0; 
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px;
+      
+}
+.follow{
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* main section */
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#one{
+    color: #0B0223;
+    font-size: 1.8rem;
+    font-weight: 600;    
+}
+.two{
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#four{
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* main container */
+.info-container{
+    text-align: center;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;    
+}
+.watch{
+    font-size: 1rem;
+    font-weight: 600;   
+    color: #F948B2;
+}
+#playing{
+    position: relative;
+    bottom: 200px;
+    left: 150px;
+    border: 0;
+    border-radius: 5px;   
+}
+.funny,.play{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.info-title,.content-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.info-description,{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400; 
+}
+/* new one */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px  240px 10px;   
+}
+.info-content{
+    padding: 0 40px;
+}
+.img-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#baby{
+    position: relative;
+    top: 350px;
+    left: 150px;
+}
+/* game section */
+.game-section{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 280px;
+    margin-top: 80px;
+}
+.game-section > div{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px;  
+}
+.game-section p{
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* footer section */
+.footer{
+    height: 500px;
+    background: #0B0223;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFF;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #FFF;       
+    font-size: 1rem;   
+    font-weight: 600;
+    padding: 10px 0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #FFF;
+    padding-bottom: 10px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+/* responsive web design */
+
+/* mobile and other small devices */
+@media screen and (max-width: 576px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-title{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .section img{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .img-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content{
+        flex-direction: column;
+
+    }
+    .img-content{
+        justify-content: center; 
+        width: 100%; 
+    } 
+    .game-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: nowrap;
+        
+    }
+    .footer{
+        padding-left: 10px;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 5px;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+    .terms{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright{
+        
+    }
+}
